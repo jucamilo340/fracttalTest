@@ -72,7 +72,8 @@ export function EmployeeProvider({ children }: EmployeeProviderProps) {
       };
       getEmployees();
     } catch (error:any) {
-      setError(error.message);
+      const validateError = error?.response ? error.response.data.message : error.message;
+      setError(validateError);
     }
     setloading(false);
   };
@@ -95,7 +96,8 @@ export function EmployeeProvider({ children }: EmployeeProviderProps) {
         getEmployees();
       }
     } catch (error:any) {
-      setError(error.message);
+      const validateError = error?.response ? error.response.data.message : error.message;
+      setError(validateError);
     }
     setloading(false);
   };

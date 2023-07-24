@@ -55,8 +55,8 @@ export const AuthProvider: FC<AuthProviderProps> = ({ children }) => {
         setmessage('Usuario Creado exitosamente');
       }
     } catch (error: any) {
-      console.log(error?.response?.data);
-      setErrors(error.response.data.message);
+      const validateError = error?.response ? error.response.data.message : error.message;
+      setErrors(validateError);
     }
     setLoadingRq(false);
   };
@@ -68,8 +68,8 @@ export const AuthProvider: FC<AuthProviderProps> = ({ children }) => {
       setUser(res.data);
       setIsAuthenticated(true);
     } catch (error:any) {
-      console.log(error);
-      setErrors(error.response.data.message);
+      const validateError = error?.response ? error.response.data.message : error.message;
+      setErrors(validateError);
     }
     setLoadingRq(false);
   };
