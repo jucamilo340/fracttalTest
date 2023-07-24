@@ -1,46 +1,81 @@
-# Getting Started with Create React App
+# Fracttaltest - Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Fracttaltest]
 
-## Available Scripts
+Welcome to the Fracttaltest frontend repository! This project is a Single Page Application (SPA) built with React.js, designed to handle user authentication and display a table with information about individuals, including their names, IDs, and job descriptions. The application allows CRUD operations on the table and maintains a log of transactions.
 
-In the project directory, you can run:
+## Installation
 
-### `npm start`
+To get started with Fracttaltest frontend, make sure you have [Node.js](https://nodejs.org) installed. Then, follow these steps:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+1. Clone this repository to your local machine.
+2. Navigate to the project's root directory using the terminal or command prompt.
+3. Run the following command to install the required dependencies:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+```bash
+npm install
+```
 
-### `npm test`
+This will install all the necessary packages listed in the `package.json` file.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Usage
 
-### `npm run build`
+Once you have installed the dependencies, you can use the following scripts to interact with the application:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- `npm start`: Launches the development server and opens the application in your default browser for local development.
+- `npm run build`: Builds the application for production deployment.
+- `npm test`: Runs the test suite to perform unit testing.
+- `npm run eject`: Ejects the application from the Create React App scripts, providing full control over the configuration.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Dependencies
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The Fracttaltest frontend relies on the following main dependencies:
 
-### `npm run eject`
+- `@testing-library/jest-dom`: Jest DOM custom matchers for testing.
+- `@testing-library/react`: React testing utilities.
+- `@testing-library/user-event`: User events testing utilities.
+- `@types/crypto-js`: TypeScript definitions for CryptoJS.
+- `@types/jest`: TypeScript definitions for Jest.
+- `@types/node`: TypeScript definitions for Node.js.
+- `@types/react`: TypeScript definitions for React.
+- `@types/react-dom`: TypeScript definitions for React DOM.
+- `autoprefixer`: PostCSS plugin to parse CSS and add vendor prefixes automatically.
+- `axios`: Promise-based HTTP client for making API requests.
+- `crypto-js`: JavaScript library for cryptographic functions.
+- `date-fns`: Modern JavaScript date utility library.
+- `formik`: Form library for React and React Native applications.
+- `js-cookie`: JavaScript library to handle browser cookies.
+- `postcss`: CSS post-processor to transform CSS using JavaScript.
+- `react`: JavaScript library for building user interfaces.
+- `react-dom`: Provides DOM-specific methods for React.
+- `react-router-dom`: DOM bindings for React Router, facilitating navigation.
+- `react-scripts`: Configuration and scripts for Create React App.
+- `tailwindcss`: Utility-first CSS framework.
+- `typescript`: TypeScript language and compiler.
+- `web-vitals`: Library for measuring web vitals metrics.
+- `yup`: JavaScript object schema validation library.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Project Structure
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+The project's folder structure follows the recommended conventions for a React application, keeping code organized and maintainable. Here's an overview of the main directories and files:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- `/public`: Contains the public assets and the main `index.html` file.
+- `/src`: The source folder where all application code resides.
+  - `/components`: Contains reusable React components used throughout the application.
+  - `/scenes`: Includes individual pages representing different views of the application.
+  - `/services`: Holds service modules responsible for API communication and other external services.
+  - `/utils`: Contains utility functions used across the application.
+  - `App.js`: The entry point of the application.
+  - `index.js`: The entry point of React, rendering the root component (`App`) to the DOM.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Contributing
 
-## Learn More
+Contributions to Fracttaltest frontend are welcome! If you encounter any issues, have suggestions for improvements, or want to add new features, please open an issue or submit a pull request. Before contributing, please read our [Contributing Guidelines](CONTRIBUTING.md).
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## License
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Fracttaltest frontend is licensed under the MIT License. You can find more details in the [LICENSE](LICENSE) file.
+
+---
+
+Thank you for choosing Fracttaltest frontend! If you have any questions or need further assistance, feel free to contact us at jucamilo340@gmail.com.
